@@ -1,6 +1,6 @@
 /**
  * Core types for Amanda Helmer's Professional Portfolio
- * Structured for Business Administration & Systems Focus
+ * Purpose: Ensures type safety for Business Administration & Systems Focus
  */
 
 export interface Project {
@@ -8,46 +8,46 @@ export interface Project {
     title: string;
     problem: string;      // Non-negotiable: The specific challenge addressed
     solution: string;     // Non-negotiable: What you built or implemented
-    description?: string; // Optional legacy summary used by older cards
-    technologies: string[]; // Tools used (CRM, SQL, Kotlin, etc.)
+    description?: string; // Optional summary used by card-style project layouts
+    technologies: string[]; // e.g., Kotlin, SQL, Salesforce
     outcome: string;      // Non-negotiable: The measurable result or benefit
-    link?: string;        // Optional: Link to GitHub or Live Demo
-    imageUrl?: string;    // Optional: Project screenshot
+    link?: string;        // Optional: Link to GitHub or demo
+    imageUrl?: string;
 }
 
 export interface SkillCategory {
-    category: "CRM Tools" | "Technical" | "Business"; // Logically grouped categories
+    // Enforces grouping into your three core areas
+    category: "CRM Tools" | "Technical" | "Business";
     items: string[];
 }
 
 export interface About {
-    name: string;
+    name: string;         // Amanda Helmer
     title: string;        // e.g., "Business Administration Graduate | CRM & Systems Focus"
-    location: string;
+    location: string;     // Durant, Oklahoma
     bio: string;          // Short, direct background
-    valueStatement: string; // 1-2 sentences: what you do + what you bring
-    email: string;
+    valueStatement: string; // 1–2 sentences: what you do + what you bring
+    email: string;        // Helmeramanda90@gmail.com
     socials: {
         github?: string;
         linkedin?: string;
-        credly?: string;
+        credly?: string;    // For Google Digital Marketing certificate
     };
+}
+
+export interface Education {
+    school: string;       // Purdue Global University
+    degree: string;// Bachelor of Science in Business Administration
+    major?: string;
+    status: string;       // e.g., "In Progress (2026)"
+    relevantCoursework: string[]; // e.g., Quality Management, ProjectCard Management
 }
 
 export interface Experience {
     id: number;
     company: string;
+    location: string;
     role: string;
-    location?: string;
     period: string;
-    isCurrent?: boolean;
     description: string[];
-}
-
-export interface Education {
-    school: string;
-    degree: string;
-    major?: string;
-    status: string;
-    relevantCoursework: string[];
 }

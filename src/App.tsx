@@ -1,9 +1,10 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './sections/About';
-import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
 
 export default function App() {
     return (
@@ -12,7 +13,13 @@ export default function App() {
             <main className="max-w-6xl mx-auto px-6">
                 <Hero />
                 <About />
-                <Projects />
+                <Skills />
+                <div className="grid-cols-1 border-slate-100 py-20 md:grid">
+                    <Projects />
+                </div>
+
+
+
                 <Contact />
             </main>
             <Footer />

@@ -10,9 +10,7 @@ export default function Hero() {
                 {ABOUT_ME.title}
             </h2>
             <p className="max-w-2xl text-xl text-slate-600 leading-relaxed mb-10">
-                I help organizations streamline operations by combining <span className="text-slate-900 font-semibold">business intelligence</span> with
-                <span className="text-slate-900 font-semibold"> modern technical systems</span>.
-                Current Purdue Global student focusing on CRM efficiency.
+                I design and build systems that solve <span className="text-slate-900 font-semibold">real organizational problems </span>  <span className="text-slate-900 font-semibold"></span>
             </p>
             <div className="flex gap-4">
                 <a href="#projects" className="px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 transition-all">
