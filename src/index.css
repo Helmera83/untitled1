@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --font-display: 'DM Serif Display', Georgia, serif;
-    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --blue: #2563EB;
     --blue-light: #EFF6FF;
     --ink: #0A0A0A;
@@ -34,7 +34,7 @@ h1, h2, h3 {
 
 /* Section number labels */
 .section-label {
-    font-family: var(--font-body);
+    font-family: var(--font-body),sans-serif;
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.18em;

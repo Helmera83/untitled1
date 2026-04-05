@@ -2,10 +2,10 @@ import { PROJECTS_DATA } from '../data/portfolioData';
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-20 border-b border-gray-100">
+        <section id="projects" className="py-24 border-b border-gray-100">
             <div className="flex items-baseline gap-4 mb-12">
                 <span className="section-label">03 — Work</span>
-                <h2 className="text-4xl text-gray-900">Selected Projects</h2>
+                <h2 className="text-4xl md:text-5xl leading-none tracking-tight text-gray-900">Selected Projects</h2>
             </div>
 
             <div className="space-y-6">

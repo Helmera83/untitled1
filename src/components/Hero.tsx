@@ -9,23 +9,23 @@ const stats = [
 
 export default function Hero() {
     return (
-        <section className="pt-20 pb-16 border-b border-gray-100">
+        <section className="pt-24 pb-20 border-b border-gray-100">
             {/* Role badge */}
-            <div className="fade-up fade-up-1 mb-8">
+            <div className="fade-up fade-up-1 mb-10">
                 <span className="section-label">
                     ✦ Available for new roles · {ABOUT_ME.location}
                 </span>
             </div>
 
             {/* Giant name */}
-            <h1 className="fade-up fade-up-1 text-[clamp(3rem,10vw,7rem)] leading-[0.95] font-normal text-gray-900 mb-2 -ml-1">
+            <h1 className="fade-up fade-up-1 text-[clamp(3rem,10vw,7rem)] leading-[0.9] font-normal text-gray-900 mb-4 -ml-1">
                 {ABOUT_ME.name.split(' ')[0]}
                 <br />
                 <span className="italic text-blue-600">{ABOUT_ME.name.split(' ')[1]}</span>
             </h1>
 
             {/* Title + bio row */}
-            <div className="fade-up fade-up-2 mt-8 grid md:grid-cols-2 gap-8 items-end">
+            <div className="fade-up fade-up-2 mt-10 grid md:grid-cols-2 gap-10 items-end">
                 <div>
                     <p className="text-lg font-medium text-gray-900 mb-3">{ABOUT_ME.title}</p>
                     <p className="text-gray-500 leading-relaxed max-w-sm">
