@@ -14,12 +14,7 @@ export default function App() {
                 <Hero />
                 <About />
                 <Skills />
-                <div className="grid-cols-1 border-slate-100 py-20 md:grid">
-                    <Projects />
-                </div>
-
-
-
+                <Projects />
                 <Contact />
             </main>
             <Footer />
