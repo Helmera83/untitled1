@@ -3,7 +3,7 @@ import { ABOUT_ME } from '../data/portfolioData';
 export default function Hero() {
     return (
         <section className="py-24 flex flex-col items-center text-center">
-            <h1 className="text-6xl font-black text-slate-900 tracking-tighter mb-4">
+            <h1 className="text-6xl font-black leading-tight text-slate-900 tracking-tighter mb-4">
                 {ABOUT_ME.name}
             </h1>
             <h2 className="text-2xl font-bold text-blue-600 mb-6 uppercase tracking-wide">
